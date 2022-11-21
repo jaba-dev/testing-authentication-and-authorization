@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.json("hello there");
+  res.send("<h1>api running, start at /api/users</h1>");
 });
 
 // routes
